@@ -11,44 +11,46 @@ body {
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .1);
   display: flex;
-  align-items: center;
-  padding: 8px;
-  gap: 16px;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.links {
-  flex: 1; /* NEW - makes this element grow to push other items apart */
+.left{
   display: flex;
-  gap: 16px; /* Your existing link spacing */
-  justify-content: center; /* Optional: centers links in the available space */
+  align-items: center;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .profile-image {
-  background: red;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, .5);
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  display: flex;
-  }
+}
 
 .logo {
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
-  justify-self: flex-start;
+  flex-grow: 90%;
 }
 
 button {
   border: none;
   border-radius: 8px;
-  background: green;
+  background: rebeccapurple;
   color: white;
   padding: 8px 24px;
-  display: flex;
+  justify-self: flex-end;
 }
 
 a {
@@ -60,7 +62,7 @@ a {
 ul {
   list-style-type: none;
   display: flex;
-  gap: 16px
-  ;
+  justify-content: space-around;
+  gap: 20px;
 }
 
